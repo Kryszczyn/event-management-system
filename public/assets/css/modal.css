@@ -1,0 +1,56 @@
+  .remodal {
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, .7);
+    transition: all .4s;
+  }
+  
+  .remodal__content {
+    border-radius: 4px;
+    position: relative;
+    width: 500px;
+    max-width: 90%;
+    background: #fff;
+    padding: 1em 2em;
+  }
+ 
+  .remodal__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #585858;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .remodal__btns{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .remodal__btn{
+    padding: .5rem 1rem;
+    margin: 0 .5rem;
+    font-size: 1.25rem;
+    border: none;
+    color: #fff;
+    border-radius: .5rem;
+  }
+
+  .remodal__btn.cancel{
+    background-color: #dc3545;
+  }
+  
+  .remodal__btn.ok{
+    background-color: #28a745;
+  }
